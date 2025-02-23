@@ -1,0 +1,24 @@
+{
+	"apis": {
+		"clashofclans": {
+			"base_url": "https://api.clashofclans.com/v1"
+		}
+	},
+	"auth": {
+		"discord": {
+			"rpc": {
+				"client_id": "848194055619215360"
+			}
+		},
+		"clashofclans": {
+			"api": {
+				"token": "YOUR API KEY"
+			}
+		}
+	},
+	"settings": {
+		"player": {
+			"player_tag": "YOUR PLAYER TAG"
+		}
+	}
+}
