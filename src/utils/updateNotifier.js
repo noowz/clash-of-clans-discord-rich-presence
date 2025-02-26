@@ -29,7 +29,7 @@ async function updateNotifier() {
 	const currentVersion = version;
 	const latestVersion = release.tag_name.replace("v", "");
 
-	if (currentVersion !== latestVersion) {
+	if (currentVersion < latestVersion) {
 		console.log(chalk.white("┌───────────────────────────────────────────────────────────────────────────────────┐"));
 		console.log(chalk.white("│ ") + chalk.green("🚀 A new version of ") + chalk.yellow(name) + chalk.green(" is available!") + "            " + chalk.white("│"));
 		console.log(chalk.white("│") + "                                                                                   " + chalk.white("│"));
