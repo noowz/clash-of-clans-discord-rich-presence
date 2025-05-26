@@ -1,5 +1,5 @@
 const { name, version, bugs, repository } = require("../../package.json");
-const { apis, auth, settings } = require("../config.json");
+const { apis } = require("../config.json");
 const { logger } = require("../utils/logger.js");
 const { logErrorAndExit } = require("../utils/utils.js");
 const axios = require("axios");
@@ -12,9 +12,9 @@ let startDate = firstTimeRunningRichPresence ? Date.now() : startDate;
 const rpc = async function setActivity(client) {
 	const clashofclansResponse = await axios({
 		method: "GET",
-		url: `${apis.clashofclans.base_url}/players/%23${settings.player.player_tag.replace("#", "")}`,
+		url: `${apis.clashofclans.base_url}/players/%23${process.env.CLASH_OF_CLANS_PLAYER_TAG.replace("#", "")}`,
 		headers: {
-			"Authorization": `Bearer ${auth.clashofclans.api.token}`,
+			"Authorization": `Bearer ${process.env.CLASH_OF_CLANS_API_KEY}`,
 			"Content-Type": "application/json",
 			"User-Agent": `${name}/${version}`
 		}

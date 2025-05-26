@@ -39,18 +39,19 @@
 
    ![Clash of Clans Player Tag](https://i.imgur.com/0P7Tq6q.gif)
 
-2. Go to the `config.json` file and replace **YOUR PLAYER TAG** with your Clash of Clans player tag.
-3. Go to the [Clash of Clans API Dashboard](https://developer.clashofclans.com) and create an account or log in to your account.
-4. Create a [new API key](https://developer.clashofclans.com/#/new-key). You will need to allow your IP Address. To find out your IP Address, [click here](https://nordvpn.com/what-is-my-ip).
-5. Go to the `config.json` file and replace **YOUR API KEY** with your API key.
-6. Open the Terminal and go to the folder where you saved the files with the `cd` command.
-7. Install all the required dependencies:
+2. Rename the `.env.example` file into `.env`.
+3. Go to the `.env` file and replace **CLASH_OF_CLANS_PLAYER_TAG** with your Clash of Clans player tag.
+4. Go to the [Clash of Clans API Dashboard](https://developer.clashofclans.com) and create an account or log in to your account.
+5. Create a [new API key](https://developer.clashofclans.com/#/new-key). You will need to allow your IP Address. To find out your IP Address, [click here](https://nordvpn.com/what-is-my-ip).
+6. Go to the `.env` file and replace **CLASH_OF_CLAN_API_KEY** with your API key.
+7. Open the Terminal and go to the folder where you saved the files with the `cd` command.
+8. Install all the required dependencies:
 
    ```cmd
    npm install
    ```
 
-8. Run the Rich Presence:
+9.  Run the Rich Presence:
 
    ```cmd
    npm run start
