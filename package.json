@@ -1,6 +1,6 @@
 {
 	"name": "clash-of-clans-discord-rich-presence",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"private": true,
 	"description": "Discord Rich Presence that shows on your profile your Clash of Clans statistics.",
 	"main": "src/index.js",
