@@ -1,0 +1,7 @@
+{
+	"apis": {
+		"clashofclans": {
+			"base_url": "https://api.clashofclans.com"
+		}
+	}
+}
