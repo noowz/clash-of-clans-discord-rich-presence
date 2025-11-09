@@ -22,7 +22,7 @@ const rpc = async function setActivity(client) {
 	}).catch((error) => {
 		logger.error(error);
 
-		process.exit(1);
+		return;
 	});
 
 	const player = clashofclansResponse.data;
